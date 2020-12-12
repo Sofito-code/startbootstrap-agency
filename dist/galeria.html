@@ -17,6 +17,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/nuevosEstilos.css">
+    <!-- js-->
+    <script src="js/nuevoJS.js"></script>
 </head>
 
 <body id="arriba">
@@ -44,18 +46,18 @@
             </div>
             <div class="row align-content-center">
                 <div class="col-md-3 mb-3">
-                    <select class="custom-select" id="validationDefault04">
+                    <select class="custom-select" id="validationDefault04" name="licencia">
                       <option selected disabled value="">Licencia...</option>
                       <option value="0">Exclusivo</option>
                       <option value="1">Gratis</option>
                     </select>
                 </div>
                 <div class="col-md-7 mb-7">
-                    <input type="text" class="form-control" id="validationDefault05" placeholder="">
+                    <input type="text" name="barra-busqueda" class="form-control" id="validationDefault05" placeholder="">
 
                 </div>
                 <div class="col-md-2 mb-2" style="text-align: center;">
-                    <button class="btn btn-primary btn-toolbar section-heading" id="Buscar" href="#">
+                    <button class="btn btn-primary btn-toolbar section-heading" id="Buscar" href="#" onclick="validarBusqueda();">
                         Buscar
                     </button>
                 </div>
