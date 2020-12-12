@@ -42,16 +42,25 @@
     <header class="masthead">
         <div class="container">
             <div class="masthead-subheading ">
-                <h1>¡Descubre nuestras fotos!</h1>
+                <h1>Imagenes de alta calidad</h1>
             </div>
-            <div align="center">
-                <form action="GET" id="searchForm" name="searchForm" novalidate="novalidate">
-                    <div class="form-group col-md-8 align-items-center">
-                        <input class="form-control" id="image" type="text" placeholder="Buscar imagenes..." required="required" data-validation-required-message="Please enter a word." />
-                        <p class="help-block text-danger"></p>
-                        <a class="btn btn-primary btn-xl text-uppercase" id="searchButton" href="#">Buscar</a>
-                    </div>
-                </form>
+            <div class="row align-content-center">
+                <div class="col-md-3 mb-3">
+                    <select class="custom-select" id="validationDefault04">
+                      <option selected disabled value="">Licencia...</option>
+                      <option value="0">Exclusivo</option>
+                      <option value="1">Gratis</option>
+                    </select>
+                </div>
+                <div class="col-md-7 mb-7">
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Buscar en DMA...">
+
+                </div>
+                <div class="col-md-2 mb-2" style="text-align: center;">
+                    <button class="btn btn-primary btn-toolbar section-heading" id="Buscar" href="#">
+                        Buscar
+                    </button>
+                </div>
             </div>
         </div>
     </header>
